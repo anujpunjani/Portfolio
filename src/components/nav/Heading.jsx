@@ -11,7 +11,7 @@ const Heading = () => {
       <div className={styles.buttons}>
         <ThemeToggle />
         <OutlineButton
-          onClick={() => window.open("/src/assets/Anuj_Punjani_Resume.pdf")}
+          onClick={() => window.open("/Portfolio/Anuj_Punjani_Resume.pdf")}
         >
           My resume
         </OutlineButton>
