@@ -1,0 +1,27 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2.4rem;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.aboutText p {
+  margin-bottom: 2.4rem;
+  font-weight: 200;
+}
+
+.highlightFirstLetter:first-letter {
+  background: var(--background-light);
+  padding: 1rem;
+  border-radius: 0.4rem;
+
+  font-size: var(--text-md);
+  font-weight: bold;
+
+  margin-right: 0.6rem;
+
+  float: left;
+}

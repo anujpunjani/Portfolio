@@ -1,0 +1,37 @@
+.mobileNav {
+  background: var(--bg-opaque);
+  width: max-content;
+  padding: 0.7rem 1.7rem;
+  z-index: 20;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 3rem;
+  display: flex;
+  gap: 0.8rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 25%;
+    display: flex;
+    // color: var(--text);
+    font-size: 2.5rem;
+
+    &:hover {
+      background: var(--background-dark);
+      color: var(--brand);
+    }
+  }
+  .selected {
+    background: var(--background-light);
+    color: var(--brand);
+    /* color: rgb(91, 194, 229); */
+  }
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
