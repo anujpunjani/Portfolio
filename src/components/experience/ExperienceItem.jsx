@@ -22,7 +22,7 @@ const ExperienceItem = ({
       <div>
         {description.map((item) => (
           <p key={item} className={styles.description}>
-            {item}
+            – {item}
           </p>
         ))}
       </div>
